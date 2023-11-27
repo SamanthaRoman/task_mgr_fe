@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me{% endblock title %}
+{% block content %}
+<h1>About Me</h1>
+<img src="{{ url_for('static', filename='img/kid.jpg') }}" sytle="width:5%;">
+<p>
+    Hi my name is {{ user["first_name"] }} {{ user["last_name"] }} and I am a student at
+    SDGKU...
+</p>
+<p>
+    My hobbies are: {{ user["hobbies"] }}
+</p>
+{% endblock content %}
